@@ -19,7 +19,7 @@
         }
 
         .bg-fixed-cover {
-            background-image: url('/windows/window-hero-direct.webp'); 
+            background-image: url('./windows/window-hero-direct.webp'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -127,7 +127,6 @@
             line-height: 1.1;
         }
 
-        /* 手机端全宽吸底 CTA */
         .mobile-sticky-btn {
             position: fixed;
             bottom: 0; left: 0; width: 100%;
@@ -144,7 +143,6 @@
         }
         .mobile-sticky-btn:active { background: #15803d; }
 
-        /* 增强版脉冲特效：不仅有阴影，还有缩放 */
         @keyframes pulse-strong {
             0% { 
                 box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); 
@@ -152,19 +150,18 @@
             }
             50% { 
                 box-shadow: 0 0 0 20px rgba(22, 163, 74, 0); 
-                transform: scale(1.03); /* 稍微放大一点点 */
+                transform: scale(1.03); 
             }
             100% { 
                 box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); 
                 transform: scale(1);
             }
         }
-        .btn-pulse { animation: pulse-strong 1.5s infinite; } /* 速度加快到1.5s */
+        .btn-pulse { animation: pulse-strong 1.5s infinite; }
 
-        /* 鼠标悬停时的额外强调 */
         .btn-hover-effect:hover {
             transform: scale(1.05);
-            background-color: #15803d; /* 更深的绿色 */
+            background-color: #15803d; 
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
     </style>
@@ -293,11 +290,11 @@
 
     <footer class="w-full py-6 text-center z-10 relative text-gray-400">
         <div class="flex flex-wrap justify-center gap-4 mb-2 text-xs font-semibold text-white/50">
-            <a href="/windows/terms.html" class="hover:text-white">Terms</a>
+            <a href="./windows/terms.html" class="hover:text-white">Terms</a>
             <span>|</span>
-            <a href="/windows/privacy.html" class="hover:text-white">Privacy</a>
+            <a href="./windows/privacy.html" class="hover:text-white">Privacy</a>
             <span>|</span>
-            <a href="/windows/contact.html" class="hover:text-white">Contact</a>
+            <a href="./windows/contact.html" class="hover:text-white">Contact</a>
         </div>
         <p class="text-[10px] text-white/30">
             &copy; 2026 DailyHomeNews.
