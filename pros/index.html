@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Window Replacement Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.05); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.05); }
+            70% { transform: scale(1); }
+        }
+        .btn-heartbeat { animation: heartbeat 3s infinite; }
+
+        .shine-btn { overflow: hidden; position: relative; }
+        .shine-btn::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: 0.5s; }
+        .shine-btn:hover::after { left: 100%; }
+        
+        @keyframes blue-pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); } }
+        .cta-pulse { animation: blue-pulse 2s infinite; }
+    </style>
+</head>
+<body class="bg-white antialiased text-gray-900">
+
+    <div class="bg-blue-600 text-white text-center py-4 font-bold text-lg md:text-xl tracking-wide shadow-sm">
+        2026 Window Replacement Service
+    </div>
+
+    <div class="max-w-7xl mx-auto bg-white overflow-hidden">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12">
+            
+            <div class="col-span-1 md:col-span-7 p-6 md:p-14 md:pr-10 flex flex-col justify-center items-center text-center">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-8 text-black tracking-tight">
+                    Homeowners Get Help Replacing Their Windows With New 2026 Services
+                </h1>
+
+                <ul class="space-y-5 mb-8 text-lg md:text-2xl font-bold text-gray-800 flex flex-col items-center">
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-circle-check text-green-500 text-3xl md:text-4xl mr-3 flex-shrink-0 leading-none"></i>
+                        <span>Must be a homeowner</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-circle-check text-green-500 text-3xl md:text-4xl mr-3 flex-shrink-0 leading-none"></i>
+                        <span>Must be a US resident</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-circle-check text-green-500 text-3xl md:text-4xl mr-3 flex-shrink-0 leading-none"></i>
+                        <span>Cut energy bills immediately</span>
+                    </li>
+                </ul>
+
+                <div class="flex items-center justify-center mb-10 font-bold text-gray-900 text-base md:text-xl max-w-lg mx-auto">
+                    <i class="fa-solid fa-triangle-exclamation text-yellow-500 text-3xl md:text-4xl mr-3 flex-shrink-0 leading-none"></i>
+                    <p class="leading-snug">Eligible Homeowners Must Apply Before The Winter Rush</p>
+                </div>
+
+                <a href="YOUR_TRACKING_LINK_HERE" class="tracking-link btn-heartbeat shine-btn cta-pulse block w-full md:max-w-xl bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-2xl md:text-3xl py-6 rounded-lg shadow-lg text-center transition transform hover:scale-[1.02] mb-10">
+                    Check My Eligibility <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+
+                <div class="flex flex-col items-center mb-8">
+                    <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-3 text-lg md:text-xl font-bold text-gray-900">
+                        <div class="flex items-center gap-2">
+                            <span>4.9 Stars</span>
+                            <div class="text-yellow-400 text-2xl flex leading-none">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="underline">1,152 reviews</span>
+                            <span class="font-normal text-base md:text-lg">on</span>
+                            <i class="fa-brands fa-google text-3xl text-gray-600 leading-none"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 font-semibold text-sm md:text-base text-center">Rated 4.83/5 by thousands of happy homeowners.</p>
+                </div>
+
+                <div class="flex justify-center w-full">
+                    <img src="media-logos.webp" alt="As seen on" class="w-4/5 md:w-auto md:max-w-lg h-auto object-contain opacity-90">
+                </div>
+
+            </div>
+
+            <div class="hidden md:block col-span-5 relative min-h-[600px]">
+                <img src="window-hero-direct.webp" alt="New Windows" class="absolute inset-0 w-full h-full object-cover position-center">
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="max-w-7xl mx-auto px-4 py-8 text-center text-gray-400 text-xs md:text-sm border-t border-gray-100 mt-8">
+        <p class="mb-4 italic">Note: This is <strong>NOT</strong> a government program and the window replacement is <strong>NOT</strong> free!</p>
+        
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4 font-semibold text-gray-500">
+            <a href="terms.html" class="hover:text-gray-800 hover:underline transition">Terms & Conditions</a>
+            <span>|</span>
+            <a href="privacy.html" class="hover:text-gray-800 hover:underline transition">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact.html" class="hover:text-gray-800 hover:underline transition">Contact Us</a>
+        </div>
+
+        <p>© 2026 – Window Replacement Services. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const trackingUrl = "https://ky91x.bemobtrk.com/click"; 
+        document.querySelector('.tracking-link').href = trackingUrl;
+    </script>
+
+</body>
+</html>
