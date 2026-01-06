@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Montserrat', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <div class="flex-grow max-w-4xl mx-auto bg-white p-6 md:p-12 shadow-none md:shadow-md my-0 md:my-8">
+        <h1 class="text-3xl font-bold mb-6">Privacy Policy</h1>
+        
+        <p class="mb-4 text-sm text-gray-500" id="autoDate"></p>
+        <script>
+            const date = new Date();
+            const month = date.toLocaleString('en-US', { month: 'long' });
+            const year = date.getFullYear();
+            document.getElementById('autoDate').innerText = `Effective date: ${month} ${year}`;
+        </script>
+
+        <p class="mb-4">Window Replacement Services ("us", "we", or "our") operates this website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+        <p class="mb-4">We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">1. Information Collection And Use</h2>
+        <p class="mb-4">We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">Types of Data Collected</h3>
+        <p class="mb-2"><strong>Personal Data</strong></p>
+        <p class="mb-4">While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to: Email address, First name and last name, Phone number, Address, State, Province, ZIP/Postal code, City, Cookies and Usage Data.</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">Log Data</h3>
+        <p class="mb-4">We may also collect information that your browser sends whenever you visit our Service ("Log Data"). This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">2. Use of Data</h2>
+        <ul class="list-disc pl-5 mb-4 space-y-2">
+            <li>To provide and maintain the Service</li>
+            <li>To notify you about changes to our Service</li>
+            <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+            <li>To provide customer care and support</li>
+            <li>To provide analysis or valuable information so that we can improve the Service</li>
+            <li>To monitor the usage of the Service</li>
+            <li>To detect, prevent and address technical issues</li>
+        </ul>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">3. Retention of Data</h2>
+        <p class="mb-4">Window Replacement Services will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">4. Transfer of Data</h2>
+        <p class="mb-4">Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">5. Security of Data</h2>
+        <p class="mb-4">The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">6. Service Providers</h2>
+        <p class="mb-4">We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">7. Links To Other Sites</h2>
+        <p class="mb-4">Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">8. Children's Privacy</h2>
+        <p class="mb-4">Our Service does not address anyone under the age of 18 ("Children"). We do not knowingly collect personally identifiable information from anyone under the age of 18.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">9. California Privacy Rights (CCPA)</h2>
+        <p class="mb-4">If you are a California resident, you have specific rights regarding your personal information under the California Consumer Privacy Act (CCPA). This section serves as notice to California residents. You have the right to request that we disclose certain information to you about our collection and use of your personal information over the past 12 months.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">10. Contact Us</h2>
+        <p class="mb-4">If you have any questions about this Privacy Policy, please contact us via our Contact page.</p>
+        
+        <div class="mt-12 pt-8 border-t text-center pb-8 md:pb-0">
+            <a href="index.html" class="inline-block bg-blue-50 hover:bg-blue-100 text-blue-600 font-bold py-3 px-8 rounded-full transition">
+                &laquo; Back to Homepage
+            </a>
+        </div>
+    </div>
+
+    <footer class="py-6 text-center text-gray-400 text-xs">
+        <p>&copy; <span id="year"></span> Window Replacement Services. All rights reserved.</p>
+        <script>document.getElementById('year').innerText = new Date().getFullYear();</script>
+    </footer>
+
+</body>
+</html>
