@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Homeowner Update</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Open Sans', sans-serif; background-color: #f3f4f6; }
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #374151; font-size: 1.1rem; }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.05); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.05); }
+            70% { transform: scale(1); }
+        }
+        .btn-heartbeat { animation: heartbeat 3s infinite; }
+
+        .shine-btn { overflow: hidden; position: relative; }
+        .shine-btn::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: 0.5s; }
+        .shine-btn:hover::after { left: 100%; }
+        
+        @keyframes subtle-pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); } }
+        .cta-pulse { animation: subtle-pulse 2s infinite; }
+    </style>
+</head>
+<body class="antialiased pb-20 md:pb-0">
+
+    <div class="bg-blue-900 text-white text-center py-2 text-xs font-bold uppercase tracking-wide">
+        US Residents Only • January 2026 Update
+    </div>
+
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-house-flag text-red-600 text-2xl"></i>
+                <span class="font-bold text-xl text-gray-800 tracking-tighter">Home<span class="text-green-600">Tips</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold text-gray-500">
+                <span>Trends</span><span>Finance</span><span>Real Estate</span><span class="text-red-600">Energy Savings</span>
+            </div>
+            <div class="md:hidden text-gray-600"><i class="fa-solid fa-bars text-xl"></i></div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto md:mt-8 md:mb-12 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8 relative">
+        
+        <main class="md:col-span-8 bg-white md:rounded-lg md:shadow-sm border border-gray-100 overflow-hidden h-fit">
+            
+            <div class="w-full h-64 md:h-80 relative">
+                <img src="hero-window.webp" alt="Window Update" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase">Breaking News</div>
+            </div>
+
+            <div class="p-6 md:p-10">
+                <h1 class="text-2xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                    New 2026 Policy: Why Homeowners Are Rushing To Replace Windows This January
+                </h1>
+                
+                <div class="flex items-center mb-8 border-b border-gray-100 pb-6">
+                    <img src="author-face.webp" alt="Author" class="w-10 h-10 rounded-full mr-3 bg-gray-200">
+                    <div class="text-sm">
+                        <p class="font-bold text-gray-700">By Mike Anderson</p>
+                        <p class="text-gray-500">Published: January 04, 2026 • 4 min read</p>
+                    </div>
+                </div>
+
+                <div class="article-content">
+                    <p><span class="font-bold text-4xl float-left mr-2 mt-[-10px] text-gray-800">I</span>f you own a home in the US and your windows are more than 5 years old, this might be the most important financial update you read this winter.</p>
+                    <p>Energy costs are climbing, and new data shows that outdated windows are responsible for up to 30% of heat loss in American homes. But here is the good news: <strong>New incentives for 2026 are making window replacements more affordable than ever.</strong></p>
+                    <p>Unlike traditional renovations that cost a fortune upfront, these new programs are designed to help homeowners upgrade their property value and slash energy bills immediately.</p>
+
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">How To Check If You Qualify</h3>
+                    <p>It is surprisingly simple. A new online service allows homeowners to check their eligibility for local window replacement quotes in under two minutes.</p>
+
+                    <div class="md:hidden my-8 bg-blue-50 border-2 border-blue-100 rounded-xl p-6 cta-pulse text-center">
+                        <h2 class="text-xl font-bold text-blue-900 mb-2">Check Eligibility For Your Zip Code</h2>
+                        <p class="text-blue-700 mb-6 text-sm">Tap below to see available savings in your area.</p>
+                        <a href="YOUR_TRACKING_LINK_HERE" class="tracking-link btn-heartbeat shine-btn inline-block w-full bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-10 py-4 rounded-lg shadow-lg">Check My Eligibility &raquo;</a>
+                        <p class="mt-4 text-xs text-gray-500">Free Check • No Obligation • Secure</p>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">Why Do This Now?</h3>
+                    <p>The demand is high due to the winter season. Local contractors are filling their schedules fast. By checking now, you ensure you get the best possible rates before the programs potentially change later in the year.</p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="col-span-1 md:col-span-4 px-4 md:px-0 relative">
+            
+            <div class="hidden md:block sticky top-6 z-10 space-y-5">
+                <div class="bg-blue-50 rounded-xl shadow-lg border-2 border-blue-300 p-8 text-center cta-pulse">
+                    <div class="uppercase text-xs font-bold text-blue-600 mb-3 tracking-wider flex items-center justify-center">
+                        <span class="w-2 h-2 bg-red-500 rounded-full mr-2 animate-ping"></span> Live Opportunity
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-gray-900 mb-3 leading-tight">Check Eligibility For Your Zip Code</h2>
+                    <p class="text-gray-600 mb-6 text-sm font-medium">See if your area qualifies for 2026 savings.</p>
+                    <a href="YOUR_TRACKING_LINK_HERE" class="tracking-link btn-heartbeat shine-btn block w-full bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-5 rounded-lg shadow-xl transform transition hover:scale-105">Check Eligibility &raquo;</a>
+                    <div class="mt-5 flex justify-center space-x-4 text-gray-500 text-xs">
+                        <span><i class="fa-solid fa-lock text-green-600"></i> Secure</span>
+                        <span><i class="fa-solid fa-bolt text-yellow-500"></i> Fast</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+                    <h4 class="font-bold text-gray-900 border-b border-gray-200 pb-2 mb-3 uppercase text-xs">Fast Facts</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i> <span>Increases home value instantly.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i> <span>Reduces monthly energy bills.</span></li>
+                    </ul>
+                </div>
+
+                 <h4 class="font-bold text-gray-500 text-xs uppercase tracking-wider px-1 mt-2">Recent Feedback</h4>
+
+                 <div class="space-y-3">
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                        <div class="flex text-yellow-400 mb-1 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-xs italic text-gray-700 mb-2 leading-relaxed">"I didn't realize how much heat I was losing until I got the quote. The process was super easy."</p>
+                        <div class="flex items-center"><div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-700 text-[10px]">S</div><span class="ml-2 text-xs font-bold text-gray-500">Sarah M.</span></div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                        <div class="flex text-yellow-400 mb-1 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-xs italic text-gray-700 mb-2 leading-relaxed">"My realtor said the new windows added about $12k to my home's value."</p>
+                        <div class="flex items-center"><div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-700 text-[10px]">J</div><span class="ml-2 text-xs font-bold text-gray-500">James T.</span></div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                        <div class="flex text-yellow-400 mb-1 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-xs italic text-gray-700 mb-2 leading-relaxed">"Difference is night and day. Finally my living room isn't freezing."</p>
+                        <div class="flex items-center"><div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-700 text-[10px]">L</div><span class="ml-2 text-xs font-bold text-gray-500">Linda K.</span></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="md:hidden mt-0">
+                 <h3 class="text-xl font-bold text-gray-900 mb-4 pt-2">Homeowner Discussion</h3>
+                 <div class="space-y-4">
+                    <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                        <div class="flex text-yellow-400 mb-2 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-sm italic text-gray-700 mb-3">"I didn't realize how much heat I was losing until I got the quote. The process was super easy."</p>
+                        <div class="flex items-center"><div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-700 text-xs">S</div><span class="ml-2 text-xs font-bold text-gray-500">Sarah M., Ohio</span></div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                        <div class="flex text-yellow-400 mb-2 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-sm italic text-gray-700 mb-3">"My realtor said the new windows added about $12k to my home's value. Best investment I've made this year."</p>
+                        <div class="flex items-center"><div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-700 text-xs">J</div><span class="ml-2 text-xs font-bold text-gray-500">James T., Texas</span></div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                        <div class="flex text-yellow-400 mb-2 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-sm italic text-gray-700 mb-3">"Finally my living room isn't freezing anymore. The difference with the new windows is night and day."</p>
+                        <div class="flex items-center"><div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-700 text-xs">L</div><span class="ml-2 text-xs font-bold text-gray-500">Linda K., Michigan</span></div>
+                    </div>
+                 </div>
+                 <p class="text-center text-xs text-gray-400 pb-4 mt-4">Comments are closed.</p>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <footer class="max-w-5xl mx-auto px-6 py-8 text-center border-t border-gray-300 mt-8 text-gray-400 text-xs pb-24 md:pb-8">
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-4 text-xs font-semibold text-gray-500">
+            <a href="terms.html" class="hover:text-blue-600 hover:underline transition">Terms of Service</a>
+            <span>|</span>
+            <a href="privacy.html" class="hover:text-blue-600 hover:underline transition">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact.html" class="hover:text-blue-600 hover:underline transition">Contact Us</a>
+        </div>
+
+        <p class="mb-2">&copy; 2026 DailyHomeNews. All rights reserved.</p>
+        <p>This website is an advertising marketplace and not a news publication or government agency. The information presented is for demonstration purposes only.</p>
+    </footer>
+    
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <a href="YOUR_TRACKING_LINK_HERE" class="tracking-link btn-heartbeat block w-full bg-green-600 text-white font-bold text-center py-3 rounded shadow text-lg">Check Eligibility Now</a>
+    </div>
+
+    <script>
+        const trackingUrl = "https://ky91x.bemobtrk.com/click"; 
+        document.querySelectorAll('.tracking-link').forEach(link => { link.href = trackingUrl; });
+    </script>
+</body>
+</html>
