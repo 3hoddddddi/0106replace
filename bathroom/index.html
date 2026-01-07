@@ -11,7 +11,6 @@
         body { font-family: 'Inter', sans-serif; }
         
         .bg-fixed-cover {
-            /* Updated image path for Bathroom */
             background-image: url('./bathroom/bathroom-hero-direct.webp'); 
             background-size: cover;
             background-position: center;
@@ -236,78 +235,4 @@
             
             <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 text-center">
                  <p class="text-[10px] text-gray-400 leading-tight">
-                    <i class="fa-solid fa-lock text-gray-300 mr-1"></i> Your information is secure.
-                 </p>
-            </div>
-        </div>
-    </div>
-
-    <footer class="w-full py-6 text-center z-10 relative text-gray-300">
-        <div class="flex flex-wrap justify-center gap-4 mb-3 text-xs font-semibold text-white/70">
-            <a href="./bathroom/terms.html" class="hover:text-white hover:underline">Terms of Service</a>
-            <span>|</span>
-            <a href="./bathroom/privacy.html" class="hover:text-white hover:underline">Privacy Policy</a>
-            <span>|</span>
-            <a href="./bathroom/contact.html" class="hover:text-white hover:underline">Contact Us</a>
-        </div>
-        <div class="px-4 max-w-2xl mx-auto">
-            <p class="text-[10px] text-white/50 leading-relaxed">
-                **Marketing Disclosure:** This website is a marketplace. The owner has a monetary connection to the product and services advertised on the site.
-            </p>
-            <p class="text-[10px] text-white/50 mt-2">&copy; 2026 HomeTips. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        const trackingUrl = "https://ky91x.bemobtrk.com/click"; 
-        document.querySelectorAll('.tracking-link').forEach(link => { link.href = trackingUrl; });
-
-        function nextStep(stepNumber) {
-            document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
-            document.getElementById('step-' + stepNumber).classList.add('active');
-            
-            const progress = document.querySelector('.progress-bar');
-            if(stepNumber === 2) progress.style.width = '35%';
-            if(stepNumber === 3) progress.style.width = '55%';
-            if(stepNumber === 4) progress.style.width = '75%';
-            if(stepNumber === 5) progress.style.width = '90%';
-        }
-
-        function startLoading() {
-            const zip = document.getElementById('zip').value;
-            if(zip.length < 5) { alert("Please enter a valid zip code."); return; }
-            
-            document.getElementById('display-zip').innerText = zip;
-
-            document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
-            document.getElementById('step-loading').classList.add('active');
-            document.querySelector('.progress-bar').style.width = '95%';
-
-            // Updated loading text for Bathroom context
-            const texts = ["Checking Local Contractors...", "Identifying Specials...", "Finalizing Match..."];
-            let i = 0;
-            const textEl = document.getElementById('loading-text');
-            const barEl = document.getElementById('loading-bar');
-            
-            const interval = setInterval(() => {
-                i++;
-                if (i < texts.length) {
-                    textEl.innerText = texts[i];
-                    barEl.style.width = (30 + i*30) + '%';
-                } else {
-                    clearInterval(interval);
-                    barEl.style.width = '100%';
-                    setTimeout(showSuccess, 500);
-                }
-            }, 1000);
-        }
-
-        function showSuccess() {
-            document.getElementById('step-loading').classList.remove('active');
-            document.getElementById('step-success').classList.add('active');
-            document.querySelector('.progress-bar').style.width = '100%';
-        }
-    </script>
-
-</body>
-</html>
+                    <i class="
