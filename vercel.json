@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/go-window",
+      "destination": "https://ky91x.bemobtrk.com/go/531ecde8-98cd-463d-8ef9-fc6edb7d74da"
+    },
+    {
+      "source": "/go-bath",
+      "destination": "https://ky91x.bemobtrk.com/go/34bd4b5d-997a-4c3f-b7e2-cbc4b665bda0"
+    }
+  ]
+}
