@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="dns-prefetch" href="https://hometips.zynarix.com">
+    <link rel="dns-prefetch" href="https://ky91x.bemobtrk.com">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <title>Side Hustle Match 2026</title>
+    <meta name="description" content="Take this 30-second assessment to discover your perfect 2026 match.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@HomeTips">
+    <meta name="twitter:title" content="Find Your 2026 Side Hustle">
+    <meta name="twitter:description" content="Answer 3 simple questions to unlock exclusive opportunities today.">
+    <meta name="twitter:image" content="https://hometips.zynarix.com/preview.jpg">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Side Hustle Match 2026">
+    <meta property="og:description" content="Take this 30-second assessment to discover your perfect 2026 match.">
+    <meta property="og:image" content="https://hometips.zynarix.com/preview.jpg">
+
+    <style>
+        :root {
+            --primary: #ffc107;
+            --primary-hover: #e0a800;
+            --bg: #1a1a1a;
+            --card-bg: #2a2a2a;
+            --text-main: #ffffff;
+            --text-muted: #777777;
+            --border: #444444;
+            --alert-bg: #111111;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: var(--card-bg);
+            padding: 0.5rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .live-bar {
+            background-color: var(--alert-bg);
+            color: var(--text-main);
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .blink { animation: blinker 1.5s linear infinite; }
+
+        .container {
+            flex: 1;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem 1rem 4rem 1rem;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .card {
+            width: 100%;
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bottom-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.25);
+            width: 33%;
+            transition: width 0.4s ease;
+        }
+
+        .header-group { margin-bottom: 1.5rem; }
+
+        .main-title {
+            font-size: clamp(1.8rem, 7vw, 2.4rem);
+            margin: 0 0 0.5rem 0;
+            font-weight: 900;
+            color: var(--text-main);
+            line-height: 1.15;
+            text-transform: uppercase;
+        }
+
+        .highlight { color: var(--primary); }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .step { display: none; width: 100%; }
+        .step.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+
+        .question-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0 0 1.5rem 0;
+            color: var(--text-main);
+            white-space: nowrap;
+        }
+
+        .option-btn {
+            display: block;
+            width: 100%;
+            padding: 1.125rem;
+            margin-bottom: 1rem;
+            background-color: var(--primary);
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000000;
+            cursor: pointer;
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+
+        .option-btn:hover { background-color: var(--primary-hover); }
+        .option-btn:active { transform: scale(0.98); }
+
+        .loader {
+            border: 4px solid var(--border);
+            border-top: 4px solid rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 1.25rem;
+            background-color: var(--primary);
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-top: 1.5rem;
+            box-sizing: border-box;
+            animation: pulsate 1.5s infinite;
+        }
+
+        .trust-badge {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+            background-color: var(--bg);
+            box-sizing: border-box;
+        }
+
+        .footer p { margin: 0.5rem 0; font-size: 0.875rem; color: var(--text-muted); }
+        .footer a { color: var(--text-muted); text-decoration: underline; margin: 0 0.5rem; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+
+        @keyframes pulsate {
+            0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+        }
+
+        @media (max-width: 480px) {
+            .card { padding: 2rem 1.25rem; }
+        }
+    </style>
+
+    <script type="text/javascript">
+        !function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://ky91x.bemobtrk.com/landing/50e9980e-5e1b-4171-a77c-e021e574471c?callback=REPLACE&rule=REPLACE&path=REPLACE&landing=REPLACE&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();
+    </script>
+
+</head>
+<body>
+
+    <div class="header">HomeTips</div>
+    
+    <div class="live-bar">
+        <span class="blink">🔴</span> <span id="user-count">57</span> people are taking this quiz right now.
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div id="step1" class="step active">
+                <div class="header-group">
+                    <h1 class="main-title">FIND YOUR 2026<br><span class="highlight">SIDE HUSTLE</span></h1>
+                    <p class="subtitle">Answer 3 questions to qualify.</p>
+                </div>
+                <p class="question-text">Q1: How many hours can you work?</p>
+                <button class="option-btn" onclick="nextStep(2, 66)">1-2 Hours</button>
+                <button class="option-btn" onclick="nextStep(2, 66)">3-4 Hours</button>
+                <button class="option-btn" onclick="nextStep(2, 66)">5+ Hours</button>
+                <div class="trust-badge">🔒 100% Secure &nbsp;|&nbsp; ✓ Verified</div>
+            </div>
+
+            <div id="step2" class="step">
+                <div class="header-group">
+                    <h1 class="main-title">FIND YOUR 2026<br><span class="highlight">SIDE HUSTLE</span></h1>
+                    <p class="subtitle" style="visibility: hidden;">Answer 3 questions to qualify.</p>
+                </div>
+                <p class="question-text">Q2: Why do you want extra income?</p>
+                <button class="option-btn" onclick="nextStep(3, 100)">Pay off bills</button>
+                <button class="option-btn" onclick="nextStep(3, 100)">Save for the future</button>
+                <button class="option-btn" onclick="nextStep(3, 100)">Extra spending money</button>
+                <div class="trust-badge">🔒 100% Secure &nbsp;|&nbsp; ✓ Verified</div>
+            </div>
+
+            <div id="step3" class="step">
+                <div class="header-group">
+                    <h1 class="main-title">FIND YOUR 2026<br><span class="highlight">SIDE HUSTLE</span></h1>
+                    <p class="subtitle" style="visibility: hidden;">Answer 3 questions to qualify.</p>
+                </div>
+                <p class="question-text">Q3: When are you ready to begin?</p>
+                <button class="option-btn" onclick="showLoader()">Immediately (Today)</button>
+                <button class="option-btn" onclick="showLoader()">Within a week</button>
+                <button class="option-btn" onclick="showLoader()">Just exploring options</button>
+                <div class="trust-badge">🔒 100% Secure &nbsp;|&nbsp; ✓ Verified</div>
+            </div>
+
+            <div id="loading" class="step">
+                <div class="loader"></div>
+                <h2 style="margin-top: 0;">Analyzing Profile...</h2>
+                <p style="color: var(--text-muted);">Generating your perfect match.</p>
+            </div>
+
+            <div id="result" class="step">
+                <h2 style="font-size: 2rem; margin-top: 0; margin-bottom: 1rem;">Match Successful!</h2>
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;">Complete this FREE online test to unlock your exclusive side hustle guide.</p>
+                <a href="https://ky91x.bemobtrk.com/click" class="cta-btn">Start FREE Online Test</a>
+                <div class="trust-badge">🔒 100% Secure &nbsp;|&nbsp; ✓ Verified</div>
+            </div>
+
+            <div id="bottomProgress" class="bottom-progress"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 HomeTips. All rights reserved.</p>
+        <p>
+            <a href="./privacy">Privacy Policy</a> | 
+            <a href="./terms">Terms of Service</a> | 
+            <a href="./contact">Contact Us</a>
+        </p>
+    </footer>
+
+    <script>
+        var baseUsers = Math.floor(Math.random() * (65 - 45 + 1)) + 45;
+        document.getElementById('user-count').innerText = baseUsers;
+
+        function nextStep(stepNumber, progressWidth) {
+            document.querySelectorAll('.step').forEach(function(step) {
+                step.classList.remove('active');
+            });
+            document.getElementById('step' + stepNumber).classList.add('active');
+            document.getElementById('bottomProgress').style.width = progressWidth + '%';
+        }
+
+        function showLoader() {
+            document.querySelectorAll('.step').forEach(function(step) {
+                step.classList.remove('active');
+            });
+            document.getElementById('loading').classList.add('active');
+            
+            setTimeout(function() {
+                document.getElementById('loading').classList.remove('active');
+                document.getElementById('result').classList.add('active');
+                document.getElementById('bottomProgress').style.width = '100%';
+                // fbq tracking removed for speed optimization
+            }, 1200); 
+        }
+    </script>
+</body>
+</html>
